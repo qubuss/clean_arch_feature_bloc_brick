@@ -1,4 +1,4 @@
-name: clean_arch_feature_hooks
+name: feature_hooks
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

@@ -1,13 +1,10 @@
 name: clean_arch_feature
-description: A new brick created with the Mason CLI.
+description: One brick to create them all
 
-# The following defines the version and build number for your brick.
-# A version number is three numbers separated by dots, like 1.2.34
-# followed by an optional build number (separated by a +).
-version: 0.1.0
 
-# The following defines the environment for the current brick.
-# It includes the version of mason that the brick requires.
+version: 0.1.4
+
+
 environment:
   mason: ">=0.1.0-dev.38 <0.1.0"
 
@@ -22,18 +19,22 @@ environment:
 #  * a list of values (enums only)
 
 vars:
-  app_name:
-    type: string
-    description: Project (app) name
-    default: myapp
-    prompt: App name like todo
+  type:
+    type: enum
+    description: Type of the brick
+    default: presentation
+    values:
+      - feature
+      - presentation
+      - presentation_view
+      - presentation_bloc
   feature_name:
     type: string
     description: Feature name
-    default: todo
+    default: some_feature
     prompt: Feature name like todo
   sub_feature_name:
     type: string
     description: Sub Feature name
-    default: todo_details
+    default: some_feature_details
     prompt: Feature name like todo_details

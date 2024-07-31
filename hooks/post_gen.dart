@@ -1,5 +1,6 @@
 import 'package:mason/mason.dart';
+import 'dart:io';
 
-void run(HookContext context) {
-  // TODO: add post-generation logic.
-}
+import 'package:yaml/yaml.dart';
+
+Future run(HookContext context) async {}
